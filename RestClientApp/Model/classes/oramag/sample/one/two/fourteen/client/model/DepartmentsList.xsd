@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:complexType name="departmentList">
+      <xsd:sequence>
+         <xsd:element name="alldepartments" type="departments" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="departmentService"/>
+   <xsd:complexType name="departments">
+      <xsd:sequence>
+         <xsd:element name="departmentId" type="xsd:int" minOccurs="0"/>
+         <xsd:element name="departmentName" type="xsd:string" minOccurs="0"/>
+         <xsd:element name="locationId" type="xsd:int" minOccurs="0"/>
+         <xsd:element name="managerId" type="xsd:int" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+    <xsd:element name="departmentList" type="departmentList"/>
+   <xsd:element name="departments" type="departments"/>
+ </xsd:schema>

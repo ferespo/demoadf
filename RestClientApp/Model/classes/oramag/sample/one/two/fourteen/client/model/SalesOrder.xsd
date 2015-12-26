@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:complexType name="product">
+      <xsd:sequence>
+         <xsd:element name="productCode" type="xsd:string" minOccurs="0"/>
+         <xsd:element name="description" type="xsd:string" minOccurs="0"/>
+         <xsd:element name="price" type="xsd:int" minOccurs="0"/>
+         <xsd:element name="quantity" type="xsd:int" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="salesOrderDetail">
+      <xsd:sequence>
+         <xsd:element name="orderDetailId" type="xsd:long" minOccurs="0"/>
+         <xsd:element name="product" type="product" minOccurs="0"/>
+         <xsd:element name="quantity" type="xsd:int" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="carrier">
+      <xsd:sequence>
+         <xsd:element name="carrierCode" type="xsd:long" minOccurs="0"/>
+         <xsd:element name="name" type="xsd:string" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="customer">
+      <xsd:sequence>
+         <xsd:element name="customerCode" type="xsd:long" minOccurs="0"/>
+         <xsd:element name="fullName" type="xsd:string" minOccurs="0"/>
+         <xsd:element name="phoneNumber" type="xsd:string" minOccurs="0"/>
+         <xsd:element name="email" type="xsd:string" minOccurs="0"/>
+         <xsd:element name="address" type="xsd:string" minOccurs="0"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="salesOrder">
+      <xsd:sequence>
+         <xsd:element name="orderNumber" type="xsd:long" minOccurs="0"/>
+         <xsd:element name="orderDate" type="xsd:dateTime" minOccurs="0"/>
+         <xsd:element name="customer" type="customer" minOccurs="0"/>
+         <xsd:element name="carrier" type="carrier" minOccurs="0"/>
+         <xsd:element name="salesOrderDetails" type="salesOrderDetail" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:element name="product" type="product"/>
+   <xsd:element name="salesOrderDetail" type="salesOrderDetail"/>
+   <xsd:element name="carrier" type="carrier"/>
+   <xsd:element name="customer" type="customer"/>
+   <xsd:element name="salesOrder" type="salesOrder"/>
+</xsd:schema>

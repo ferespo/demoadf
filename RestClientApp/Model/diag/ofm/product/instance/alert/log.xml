@@ -1,0 +1,235 @@
+<msg time='2015-12-21T14:44:57.370-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'
+ version='1'>
+ <txt>Create Relation ADR_CONTROL
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:57.545-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation ADR_INVALIDATION
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:57.697-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INC_METER_IMPT_DEF
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:57.925-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INC_METER_PK_IMPTS
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:58.287-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INCIDENT
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:58.392-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation PROBLEM
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:58.527-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INCCKEY
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:58.644-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INCIDENT_FILE
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:58.753-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation SWEEPERR
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:58.898-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation PICKLEERR
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.106-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation VIEW
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.290-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation VIEWCOL
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.414-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation HM_RUN
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.534-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation HM_FINDING
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.663-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation HM_RECOMMENDATION
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.780-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation HM_FDG_SET
+ </txt>
+</msg>
+<msg time='2015-12-21T14:44:59.907-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation HM_INFO
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.009-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation HM_MESSAGE
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.110-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation DDE_USER_ACTION_DEF
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.486-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation DDE_USER_ACTION_PARAMETER_DEF
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.560-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation DDE_USER_ACTION
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.668-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation DDE_USER_ACTION_PARAMETER
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.833-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation DDE_USER_INCIDENT_TYPE
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:00.943-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation DDE_USER_INCIDENT_ACTION_MAP
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.025-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_PACKAGE
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.101-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_PACKAGE_INCIDENT
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.218-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_PACKAGE_FILE
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.368-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_FILE_METADATA
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.476-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_FILE_COPY_LOG
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.575-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_PACKAGE_HISTORY
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.660-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_REMOTE_PACKAGE
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:01.743-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation IPS_CONFIGURATION
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:02.603-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INC_METER_SUMMARY
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:02.701-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INC_METER_INFO
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:02.818-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation INC_METER_CONFIG
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:02.922-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation EM_USER_ACTIVITY
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:03.016-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation EM_DIAG_JOB
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:03.167-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation EM_TARGET_INFO
+ </txt>
+</msg>
+<msg time='2015-12-21T14:45:03.689-03:00' org_id='oracle' comp_id='ofm'
+ msg_id='dbgrmmdcrf_create_relation_full:1941:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='104631-ESPOSITO' host_addr='::1'>
+ <txt>Create Relation ams_xaction
+ </txt>
+</msg>

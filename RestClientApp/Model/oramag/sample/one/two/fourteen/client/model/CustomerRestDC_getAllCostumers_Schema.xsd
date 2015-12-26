@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xsd:element name="customerList">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="allcustomers" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="customerCode" type="xsd:integer"/>
+              <xsd:element name="fullName" type="xsd:string"/>
+              <xsd:element name="phoneNumber" type="xsd:string"/>
+              <xsd:element name="email" type="xsd:string"/>
+              <xsd:element name="address" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

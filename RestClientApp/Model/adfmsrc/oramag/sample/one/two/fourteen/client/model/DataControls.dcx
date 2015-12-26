@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="12.1.2.66.68" id="DataControls"
+                    Package="oramag.sample.one.two.fourteen.client.model">
+  <AdapterDataControl id="DepartmentRestDC" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.rest.RestURLDCDefinition" SupportsTransactions="false"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="oramag.sample.one.two.fourteen.client.model.DepartmentRestDC"
+                      BeanClass="oramag.sample.one.two.fourteen.client.model.DepartmentRestDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <Definitions>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="DepartmentsRestConn"
+                    Source="/" HttpMethod="GET" id="getAllDepartments" MethodRef="XSD"
+                    SchemaLocation="oramag/sample/one/two/fourteen/client/model/DepartmentsList.xsd"
+                    ensureKeyAttribute="true" RootElement="departmentList"/>
+      </Definitions>
+    </Source>
+  </AdapterDataControl>
+  <AdapterDataControl id="EmployeeRestDC" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.rest.RestURLDCDefinition" SupportsTransactions="false"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="oramag.sample.one.two.fourteen.client.model.EmployeeRestDC"
+                      BeanClass="oramag.sample.one.two.fourteen.client.model.EmployeeRestDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <Definitions>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="EmployeesRestConn"
+                    Source="/##employeeId##" HttpMethod="DELETE" id="removeEmployee" MethodRef="XSD"
+                    ensureKeyAttribute="true">
+          <Parameters>
+            <Parameter Name="employeeId" Value="100"/>
+          </Parameters>
+        </Definition>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="EmployeesRestConn" Source="/"
+                    HttpMethod="POST" id="updateEmployee" MethodRef="XSD"
+                    InputSchemaLocation="oramag/sample/one/two/fourteen/client/model/Employee.xsd"
+                    ensureKeyAttribute="true"/>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="EmployeesRestConn"
+                    Source="/##departmentId##" HttpMethod="GET" id="getEmployeesByDepartment" MethodRef="XSD"
+                    SchemaLocation="oramag/sample/one/two/fourteen/client/model/EmployeesList.xsd"
+                    ensureKeyAttribute="true" RootElement="employeeList">
+          <Parameters>
+            <Parameter Name="departmentId" Value="60"/>
+          </Parameters>
+        </Definition>
+      </Definitions>
+    </Source>
+  </AdapterDataControl>
+  <AdapterDataControl id="CustomerRestDC" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.rest.RestURLDCDefinition" SupportsTransactions="false"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="oramag.sample.one.two.fourteen.client.model.CustomerRestDC"
+                      BeanClass="oramag.sample.one.two.fourteen.client.model.CustomerRestDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <Definitions>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CustomerRestConn" Source="/"
+                    HttpMethod="GET" id="getAllCostumers" MethodRef="XSD"
+                    SchemaLocation="oramag/sample/one/two/fourteen/client/model/CustomerRestDC_getAllCostumers_Schema.xsd"
+                    ensureKeyAttribute="true" RootElement="customerList"/>
+      </Definitions>
+    </Source>
+  </AdapterDataControl>
+  <AdapterDataControl id="CarrierDC" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.rest.RestURLDCDefinition" SupportsTransactions="false"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="oramag.sample.one.two.fourteen.client.model.CarrierDC"
+                      BeanClass="oramag.sample.one.two.fourteen.client.model.CarrierDC"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <Definitions>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
+                    HttpMethod="POST" id="update" MethodRef="XSD"
+                    InputSchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
+                    ensureKeyAttribute="true"/>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn"
+                    Source="/##carrierCode##" HttpMethod="GET" id="getByCarrierCode" MethodRef="XSD"
+                    SchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
+                    ensureKeyAttribute="true" RootElement="carrier">
+          <Parameters>
+            <Parameter Name="carrierCode" Value="100"/>
+          </Parameters>
+        </Definition>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
+                    HttpMethod="GET" id="getAll" MethodRef="XSD"
+                    SchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/CarrierList.xsd"
+                    ensureKeyAttribute="true" RootElement="carrierList"/>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn"
+                    Source="/##carrierCode##" HttpMethod="DELETE" id="removeByCode" MethodRef="XSD"
+                    ensureKeyAttribute="true">
+          <Parameters>
+            <Parameter Name="carrierCode" Value="10"/>
+          </Parameters>
+        </Definition>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
+                    HttpMethod="PUT" id="insert" MethodRef="XSD"
+                    InputSchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
+                    ensureKeyAttribute="true"/>
+      </Definitions>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

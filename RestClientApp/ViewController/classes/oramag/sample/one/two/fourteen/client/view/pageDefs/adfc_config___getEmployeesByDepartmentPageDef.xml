@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.2.66.68"
+                id="adfc_config___getEmployeesByDepartmentPageDef"
+                Package="oramag.sample.one.two.fourteen.client.view.pageDefs" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="getEmployeesByDepartment" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="getEmployeesByDepartment" IsViewObjectMethod="false" DataControl="EmployeeRestDC"
+                  InstanceName="data.EmployeeRestDC"
+                  ReturnName="data.EmployeeRestDC.methodResults.getEmployeesByDepartment_EmployeeRestDC_getEmployeesByDepartment_result">
+      <NamedData NDName="departmentId" NDValue="#{pageFlowScope.dataTransferBean.departmentId}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

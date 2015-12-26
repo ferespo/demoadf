@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Oracle Magazine Mar/Apr 2014 ( Rest )  Edit Emp" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx" id="pt1">
+                <f:facet name="center">
+                    <af:panelFormLayout id="pfl1">
+                        <af:inputText value="#{bindings.employeeId.inputValue}"
+                                      label="#{bindings.employeeId.hints.label}"
+                                      required="#{bindings.employeeId.hints.mandatory}"
+                                      columns="#{bindings.employeeId.hints.displayWidth}"
+                                      maximumLength="#{bindings.employeeId.hints.precision}"
+                                      shortDesc="#{bindings.employeeId.hints.tooltip}" id="it1">
+                            <f:validator binding="#{bindings.employeeId.validator}"/>
+                            <af:convertNumber groupingUsed="false" pattern="#{bindings.employeeId.format}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.firstName.inputValue}" label="#{bindings.firstName.hints.label}"
+                                      required="#{bindings.firstName.hints.mandatory}"
+                                      columns="#{bindings.firstName.hints.displayWidth}"
+                                      maximumLength="#{bindings.firstName.hints.precision}"
+                                      shortDesc="#{bindings.firstName.hints.tooltip}" id="it2">
+                            <f:validator binding="#{bindings.firstName.validator}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.lastName.inputValue}" label="#{bindings.lastName.hints.label}"
+                                      required="#{bindings.lastName.hints.mandatory}"
+                                      columns="#{bindings.lastName.hints.displayWidth}"
+                                      maximumLength="#{bindings.lastName.hints.precision}"
+                                      shortDesc="#{bindings.lastName.hints.tooltip}" id="it3">
+                            <f:validator binding="#{bindings.lastName.validator}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputDate value="#{bindings.hireDate.inputValue}" label="#{bindings.hireDate.hints.label}"
+                                      required="#{bindings.hireDate.hints.mandatory}"
+                                      columns="#{bindings.hireDate.hints.displayWidth}"
+                                      shortDesc="#{bindings.hireDate.hints.tooltip}" id="id1">
+                            <f:validator binding="#{bindings.hireDate.validator}"/>
+                            <af:convertDateTime pattern="#{bindings.hireDate.format}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputDate>
+                        <af:inputText value="#{bindings.email.inputValue}" label="#{bindings.email.hints.label}"
+                                      required="#{bindings.email.hints.mandatory}"
+                                      columns="#{bindings.email.hints.displayWidth}"
+                                      maximumLength="#{bindings.email.hints.precision}"
+                                      shortDesc="#{bindings.email.hints.tooltip}" id="it4">
+                            <f:validator binding="#{bindings.email.validator}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.phoneNumber.inputValue}"
+                                      label="#{bindings.phoneNumber.hints.label}"
+                                      required="#{bindings.phoneNumber.hints.mandatory}"
+                                      columns="#{bindings.phoneNumber.hints.displayWidth}"
+                                      maximumLength="#{bindings.phoneNumber.hints.precision}"
+                                      shortDesc="#{bindings.phoneNumber.hints.tooltip}" id="it5">
+                            <f:validator binding="#{bindings.phoneNumber.validator}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.jobId.inputValue}" label="#{bindings.jobId.hints.label}"
+                                      required="#{bindings.jobId.hints.mandatory}"
+                                      columns="#{bindings.jobId.hints.displayWidth}"
+                                      maximumLength="#{bindings.jobId.hints.precision}"
+                                      shortDesc="#{bindings.jobId.hints.tooltip}" id="it6">
+                            <f:validator binding="#{bindings.jobId.validator}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.salary.inputValue}" label="#{bindings.salary.hints.label}"
+                                      required="#{bindings.salary.hints.mandatory}"
+                                      columns="#{bindings.salary.hints.displayWidth}"
+                                      maximumLength="#{bindings.salary.hints.precision}"
+                                      shortDesc="#{bindings.salary.hints.tooltip}" id="it7">
+                            <f:validator binding="#{bindings.salary.validator}"/>
+                            <af:convertNumber groupingUsed="false" pattern="#{bindings.salary.format}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.commissionPct.inputValue}"
+                                      label="#{bindings.commissionPct.hints.label}"
+                                      required="#{bindings.commissionPct.hints.mandatory}"
+                                      columns="#{bindings.commissionPct.hints.displayWidth}"
+                                      maximumLength="#{bindings.commissionPct.hints.precision}"
+                                      shortDesc="#{bindings.commissionPct.hints.tooltip}" id="it8">
+                            <f:validator binding="#{bindings.commissionPct.validator}"/>
+                            <af:convertNumber groupingUsed="false" pattern="#{bindings.commissionPct.format}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.managerId.inputValue}" label="#{bindings.managerId.hints.label}"
+                                      required="#{bindings.managerId.hints.mandatory}"
+                                      columns="#{bindings.managerId.hints.displayWidth}"
+                                      maximumLength="#{bindings.managerId.hints.precision}"
+                                      shortDesc="#{bindings.managerId.hints.tooltip}" id="it9">
+                            <f:validator binding="#{bindings.managerId.validator}"/>
+                            <af:convertNumber groupingUsed="false" pattern="#{bindings.managerId.format}"/>
+                            <f:event listener="#{pageFlowScope.dataTransferBean.beforeRenderBindingAttribute}"
+                                     type="preRenderComponent"/>
+                        </af:inputText>
+                        <f:facet name="footer">
+                            <af:button text="Submit" id="b1" actionListener="#{bindings.updateEmployee.execute}"
+                                       action="showDeptEmp"/>
+                        </f:facet>
+                    </af:panelFormLayout>
+                </f:facet>
+                <f:facet name="header">
+                    <af:outputFormatted value="Oracle Magazine Mar/Apr 2014 ( Rest )  Edit Emp" id="of1"
+                                        inlineStyle="font-size:large;"/>
+                </f:facet>
+                <f:facet name="start"/>
+                <f:facet name="branding"/>
+                <f:facet name="copyright"/>
+                <f:facet name="status"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>

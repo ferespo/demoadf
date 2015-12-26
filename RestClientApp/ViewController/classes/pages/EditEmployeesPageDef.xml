@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.2.66.68" id="EditEmployeesPageDef"
+                Package="pages">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="updateEmployee_parameters" RangeSize="25" DataControl="EmployeeRestDC"
+              id="updateEmployee_parametersIterator"/>
+    <accessorIterator MasterBinding="updateEmployee_parametersIterator" Binds="employees" RangeSize="25"
+                      DataControl="EmployeeRestDC"
+                      BeanClass="oramag.sample.one.two.fourteen.client.model.EmployeeRestDC.parameters.updateEmployee_Data_employees"
+                      id="employeesIterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="employeesIterator" id="employeeId">
+      <AttrNames>
+        <Item Value="employeeId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="firstName">
+      <AttrNames>
+        <Item Value="firstName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="lastName">
+      <AttrNames>
+        <Item Value="lastName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="hireDate">
+      <AttrNames>
+        <Item Value="hireDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="email">
+      <AttrNames>
+        <Item Value="email"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="phoneNumber">
+      <AttrNames>
+        <Item Value="phoneNumber"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="jobId">
+      <AttrNames>
+        <Item Value="jobId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="salary">
+      <AttrNames>
+        <Item Value="salary"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="commissionPct">
+      <AttrNames>
+        <Item Value="commissionPct"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="employeesIterator" id="managerId">
+      <AttrNames>
+        <Item Value="managerId"/>
+      </AttrNames>
+    </attributeValues>
+    <methodAction id="updateEmployee" RequiresUpdateModel="true" Action="invokeMethod" MethodName="updateEmployee"
+                  IsViewObjectMethod="false" DataControl="EmployeeRestDC" InstanceName="data.EmployeeRestDC">
+      <NamedData NDName="employees" NDValue="#{bindings.employeesIterator.currentRow.dataProvider}"
+                 NDType="java.lang.Object"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

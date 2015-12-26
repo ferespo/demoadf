@@ -1,0 +1,64 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="DepartmentsRestConn" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="DepartmentsRestConn">
+        <Contents>
+          <restconnection name="DepartmentsRestConn"
+                          url="http://127.0.0.1:7101/hr-restservice-context-root/resources/oramag/department"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="EmployeesRestConn" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="EmployeesRestConn">
+        <Contents>
+          <restconnection name="EmployeesRestConn"
+                          url="http://127.0.0.1:7101/hr-restservice-context-root/resources/oramag/employee"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="CustomerRestConn" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="CustomerRestConn">
+        <Contents>
+          <restconnection name="CustomerRestConn"
+                          url="http://127.0.0.1:7101/hr-restservice-context-root/resources/adfdemo/customer"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="CarrierRestConn" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="CarrierRestConn">
+        <Contents>
+          <restconnection name="CarrierRestConn"
+                          url="http://127.0.0.1:7101/hr-restservice-context-root/resources/adfdemo/carrier"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.2.66.68" id="DataBindings"
+             SeparateXMLFiles="false" Package="oramag.sample.one.two.fourteen.client.view" ClientType="Generic">
+  <pageMap>
+    <page path="/pages/DeptEmp.jsf" usageId="oramag_sample_one_two_fourteen_client_view_DeptEmpPageDef"/>
+    <page path="/pages/EditEmployees.jsf" usageId="oramag_sample_one_two_fourteen_client_view_EditEmployeesPageDef"/>
+    <page path="PageFlow#getEmployeesByDepartment"
+          usageId="oramag_sample_one_two_fourteen_client_view_adfc_config___getEmployeesByDepartmentPageDef"/>
+    <page path="/pages/Carrier.jsf" usageId="oramag_sample_one_two_fourteen_client_view_CarrierPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="oramag_sample_one_two_fourteen_client_view_DeptEmpPageDef" path="pages.DeptEmpPageDef"/>
+    <page id="oramag_sample_one_two_fourteen_client_view_EditEmployeesPageDef" path="pages.EditEmployeesPageDef"/>
+    <page id="oramag_sample_one_two_fourteen_client_view_adfc_config___getEmployeesByDepartmentPageDef"
+          path="oramag.sample.one.two.fourteen.client.view.pageDefs.adfc_config___getEmployeesByDepartmentPageDef"/>
+    <page id="oramag_sample_one_two_fourteen_client_view_CarrierPageDef" path="pages.CarrierPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="CarrierDC" path="oramag.sample.one.two.fourteen.client.model.CarrierDC"/>
+    <dc id="EmployeeRestDC" path="oramag.sample.one.two.fourteen.client.model.EmployeeRestDC"/>
+    <dc id="DepartmentRestDC" path="oramag.sample.one.two.fourteen.client.model.DepartmentRestDC"/>
+  </dataControlUsages>
+</Application>
