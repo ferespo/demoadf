@@ -12,5 +12,4 @@
       </xsd:sequence>
    </xsd:complexType>
    <xsd:element name="carrierList" type="carrierList"/>
-   <xsd:element name="carrier" type="carrier"/>
 </xsd:schema>
