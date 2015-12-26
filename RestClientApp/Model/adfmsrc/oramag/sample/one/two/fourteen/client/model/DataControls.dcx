@@ -73,33 +73,33 @@
                       xmlns="http://xmlns.oracle.com/adfm/datacontrol">
     <Source>
       <Definitions>
-        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
-                    HttpMethod="POST" id="update" MethodRef="XSD"
-                    InputSchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
-                    ensureKeyAttribute="true"/>
         <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn"
                     Source="/##carrierCode##" HttpMethod="GET" id="getByCarrierCode" MethodRef="XSD"
-                    SchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
-                    ensureKeyAttribute="true" RootElement="carrier">
+                    SchemaLocation="/home/fernando/Desarrollo/jdeveloper/workspace/adfdemo/RestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
+                    ensureKeyAttribute="true" dcStructureVersion="2" RootElement="carrier">
           <Parameters>
             <Parameter Name="carrierCode" Value="100"/>
           </Parameters>
         </Definition>
         <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
                     HttpMethod="GET" id="getAll" MethodRef="XSD"
-                    SchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/CarrierList.xsd"
-                    ensureKeyAttribute="true" RootElement="carrierList"/>
+                    SchemaLocation="/home/fernando/Desarrollo/jdeveloper/workspace/adfdemo/RestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/CarrierList.xsd"
+                    ensureKeyAttribute="true" dcStructureVersion="2" RootElement="carrierList"/>
         <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn"
                     Source="/##carrierCode##" HttpMethod="DELETE" id="removeByCode" MethodRef="XSD"
-                    ensureKeyAttribute="true">
+                    ensureKeyAttribute="true" dcStructureVersion="2">
           <Parameters>
             <Parameter Name="carrierCode" Value="10"/>
           </Parameters>
         </Definition>
         <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
+                    HttpMethod="POST" id="update" MethodRef="XSD"
+                    InputSchemaLocation="/home/fernando/Desarrollo/jdeveloper/workspace/adfdemo/RestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
+                    ensureKeyAttribute="true" dcStructureVersion="2"/>
+        <Definition xmlns="http://xmlns.oracle.com/adfm/adapter/rest/xml" ConnectionName="CarrierRestConn" Source="/"
                     HttpMethod="PUT" id="insert" MethodRef="XSD"
-                    InputSchemaLocation="file:/C:/Users/fesposito/data/jdeveloper_workspace/oramag030414/completed/OraMagRestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
-                    ensureKeyAttribute="true"/>
+                    InputSchemaLocation="/home/fernando/Desarrollo/jdeveloper/workspace/adfdemo/RestClientApp/Model/adfmsrc/oramag/sample/one/two/fourteen/client/model/Carrier.xsd"
+                    ensureKeyAttribute="true" dcStructureVersion="2"/>
       </Definitions>
     </Source>
   </AdapterDataControl>

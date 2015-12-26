@@ -7,6 +7,7 @@
     <page path="PageFlow#getEmployeesByDepartment"
           usageId="oramag_sample_one_two_fourteen_client_view_adfc_config___getEmployeesByDepartmentPageDef"/>
     <page path="/pages/Carrier.jsf" usageId="oramag_sample_one_two_fourteen_client_view_CarrierPageDef"/>
+    <page path="/pages/carriers.jsf" usageId="oramag_sample_one_two_fourteen_client_view_carriersPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="oramag_sample_one_two_fourteen_client_view_DeptEmpPageDef" path="pages.DeptEmpPageDef"/>
@@ -14,6 +15,7 @@
     <page id="oramag_sample_one_two_fourteen_client_view_adfc_config___getEmployeesByDepartmentPageDef"
           path="oramag.sample.one.two.fourteen.client.view.pageDefs.adfc_config___getEmployeesByDepartmentPageDef"/>
     <page id="oramag_sample_one_two_fourteen_client_view_CarrierPageDef" path="pages.CarrierPageDef"/>
+    <page id="oramag_sample_one_two_fourteen_client_view_carriersPageDef" path="pages.carriersPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="CarrierDC" path="oramag.sample.one.two.fourteen.client.model.CarrierDC"/>
